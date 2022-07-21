@@ -27,15 +27,20 @@ export default function Home() {
       <>
         <S.Header>
           <S.HeaderContent>
-            <S.Logo />
-            <S.NavBar>
-              <S.Anchor href='#what'>What is P2P?</S.Anchor>
-              <S.Anchor href='#about'>About us</S.Anchor>
-              <S.Anchor href='#advantages'>Advantages</S.Anchor>
-              <S.Anchor href='#collaborators'>Collaborators</S.Anchor>
-              <S.Anchor href='#contact'>Contact</S.Anchor>
-            </S.NavBar>
-            <S.Menu onClick={() => setMenu(!menu)}/>
+            <S.LogoBox>
+              <S.Logo src="/logo.png" alt="Volatus Logo" />
+            </S.LogoBox>
+
+            <S.NavContent>
+              <S.NavBar>
+                <S.Anchor href='#what'>What is P2P?</S.Anchor>
+                <S.Anchor href='#about'>About us</S.Anchor>
+                <S.Anchor href='#advantages'>Advantages</S.Anchor>
+                <S.Anchor href='#collaborators'>Collaborators</S.Anchor>
+                <S.Anchor href='#contact'>Contact</S.Anchor>
+              </S.NavBar>
+              <S.Menu onClick={() => setMenu(!menu)}/>
+            </S.NavContent>
           </S.HeaderContent>
         </S.Header>
 
@@ -177,8 +182,44 @@ export default function Home() {
         </S.Collaborators>
 
         <S.Contact id='contact'>
-
+          <S.CollaboratorsTitle>
+            CONTACT US
+          </S.CollaboratorsTitle>
+          <S.ContactInformations>
+            <S.ContactInformationsContent>
+              <S.ContactTitle>Entre em contato com a gente!</S.ContactTitle>
+  
+              <S.ContactList>
+                <S.ContactListItem>
+                  <S.EmailIcon />   
+                  contato@volatusintermedicao.com
+                </S.ContactListItem>
+              </S.ContactList>
+        
+              <S.WppButton>
+                <S.WppIcon />  
+                Fale conosco
+              </S.WppButton>
+            </S.ContactInformationsContent>
+            <S.ContactImg />
+          </S.ContactInformations>
         </S.Contact>
+
+        <S.Footer>
+          <S.FooterBox>
+            <S.FooterName><span>V</span>OLATU<span>S</span></S.FooterName>
+            <S.FooterSubtitle>©2022 Volatus.</S.FooterSubtitle>
+          </S.FooterBox>
+
+          <S.Links>
+            <S.FooterTitle>Contact / Social Medias</S.FooterTitle>
+            <S.TwiterLink />
+            <S.FacebookLink />
+            <S.TelegramLink />
+            <S.DiscordLink />
+            <S.InstagramLink />
+          </S.Links>
+        </S.Footer>
       </>
     }
   </>

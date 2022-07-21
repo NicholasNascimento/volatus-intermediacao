@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 import { BiMenu } from 'react-icons/bi'
 import { MdOutlineClose } from 'react-icons/md'
-import { AiFillCheckCircle } from 'react-icons/ai'
+import { AiFillCheckCircle, AiFillTwitterCircle } from 'react-icons/ai'
+import { HiOutlineMail } from 'react-icons/hi'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { BsFacebook, BsTelegram } from 'react-icons/bs'
+import { FaDiscord } from 'react-icons/fa'
+import { TiSocialInstagram } from 'react-icons/ti'
 
 export const Header = styled.header`
   background: var(--dark);
@@ -10,21 +15,28 @@ export const Header = styled.header`
 `
 
 export const HeaderContent = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 1rem 0;
-  align-items: center;
-  justify-content: space-between;
+  width: 90%;
   display: flex;
-
+  text-align: right;
 `
 
-export const Logo = styled.div`
-  width: 4rem;
-  height: 4rem;
-  background: var(--primary);
+export const LogoBox = styled.div`
+  width: 25%;
+  padding: 0 0 0.1rem;
+  position: absolute;
+  background-color: var(--texts);
+  
+`
 
-  border-radius: 2rem;
+export const Logo = styled.img`
+  max-width: 320px;
+`
+
+export const NavContent = styled.div`  
+  padding: 2rem 0;
+  width: 100%;
+  text-align: right;
+  align-items: right;
 `
 
 export const NavBar = styled.nav`
@@ -269,7 +281,6 @@ export const Check = styled(AiFillCheckCircle)`
 
 export const Collaborators = styled.section`
   background-color: #FAFAFA;
-  height: 55rem;
 `
 
 export const CollaboratorsTitle = styled.h2`
@@ -319,5 +330,198 @@ export const RightCollaboratorPhotoBox = styled.div`
 
 export const Contact = styled.section`
   background-color: #FAFAFA;
-  height: 55rem;
+`
+
+export const ContactInformations = styled.div`
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+`
+
+export const ContactInformationsContent = styled.div`
+  width: 30rem;
+  padding: 15rem 0 0 5rem;
+`
+
+export const ContactTitle = styled.h2`
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark);
+`
+
+export const ContactList = styled.ul``
+
+export const ContactListItem = styled.li`
+  display: flex;
+  align-items: center;
+`
+
+export const EmailIcon = styled(HiOutlineMail)`
+  font-size: 2rem;
+  color: var(--primary);
+`
+
+export const WppButton = styled.a`
+  background: var(--primary);
+  border: none;
+  border-radius: 4rem;
+
+  margin: 2rem 0 0;
+
+  padding: 1rem 3.2rem;
+  width: fit-content;
+
+  color: #FAFAFA;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`
+
+export const WppIcon = styled(IoLogoWhatsapp)`
+  font-size: 2rem;
+  color: #FAFAFA;
+`
+
+export const ContactImg = styled.div`
+  width: 40rem;
+  height: 25rem;
+  display: flex;
+  background-color: var(--dark);
+  margin: 10rem 0 10rem;
+  border-radius: 10px;
+`
+
+export const Footer = styled.footer`
+  height: 15rem;
+  background: #1a1a1a;
+  display: flex;
+`
+
+export const FooterBox = styled.div`
+  padding: 0.5rem 12rem 0;
+  margin: 1.5rem 0 0;
+  width: 50%;
+  height: 80%;
+  border-right: 2px solid var(--primary);
+`
+
+export const FooterName = styled.h2`
+  font-size: 2.5rem;
+  color: var(--texts);
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+  width: fit-content;
+
+  span {
+    color: var(--primary);
+  }
+`
+
+export const FooterSubtitle = styled.p`
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--texts);
+`
+
+export const Links = styled.div`
+  width: 50%;
+`
+
+export const FooterTitle = styled.h2`
+  font-size: 1.3rem;
+  color: var(--primary);
+  text-align: right;
+  margin: 1rem 10rem;
+`
+
+export const TwiterLink = styled(AiFillTwitterCircle)`
+  font-size: 2rem;
+  position: absolute;
+  right: 10rem;
+  color: var(--texts);
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`
+
+export const FacebookLink = styled(BsFacebook)`
+  font-size: 1.8rem;
+  position: absolute;
+  right: 13rem;
+  color: var(--texts);
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`
+
+export const TelegramLink = styled(BsTelegram)`
+  font-size: 1.8rem;
+  position: absolute;
+  right: 16rem;
+  color: var(--texts);
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`
+
+export const DiscordLink = styled(FaDiscord)`
+  font-size: 1.9rem;
+  position: absolute;
+  right: 19rem;
+  color: var(--texts);
+  border: 2px solid #FAFAFA;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`
+
+export const InstagramLink = styled(TiSocialInstagram)`
+  font-size: 1.8rem;
+  position: absolute;
+  right: 22rem;
+  color: var(--texts);
+  border: 2px solid #FAFAFA;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: filter 200ms;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 `
