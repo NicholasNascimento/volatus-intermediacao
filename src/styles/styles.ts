@@ -341,7 +341,7 @@ export const ContactInformations = styled.div`
 
 export const ContactInformationsContent = styled.div`
   width: 30rem;
-  padding: 15rem 0 0 5rem;
+  padding: 15rem 0 0 8rem;
 `
 
 export const ContactTitle = styled.h2`
@@ -398,8 +398,8 @@ export const WppIcon = styled(IoLogoWhatsapp)`
 `
 
 export const ContactImg = styled.div`
-  width: 40rem;
-  height: 25rem;
+  width: 640px;
+  height: 400px;
   display: flex;
   background-color: var(--dark);
   margin: 10rem 0 10rem;
@@ -496,7 +496,7 @@ export const DiscordLink = styled(FaDiscord)`
   font-size: 1.9rem;
   position: absolute;
   right: 19rem;
-  color: var(--texts);
+  background-color: var(--texts);
   border: 2px solid #FAFAFA;
   border-radius: 20px;
 
@@ -513,7 +513,7 @@ export const InstagramLink = styled(TiSocialInstagram)`
   font-size: 1.8rem;
   position: absolute;
   right: 22rem;
-  color: var(--texts);
+  background-color: var(--texts);
   border: 2px solid #FAFAFA;
   border-radius: 20px;
 

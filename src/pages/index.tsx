@@ -1,8 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import * as S from '../styles/styles'
+import Lottie from 'react-lottie';
+import animationWhatIs from '../lotties/peer-to-peer.json';
+import animationContactUs from '../lotties/contact-us.json';
 
 export default function Home() {
   const [menu, setMenu] = useState<boolean>(false)
+
+  const whatIsdefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationWhatIs,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
+  const contactUsdefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationContactUs,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
 
   useEffect(() => {
     console.log(menu)
@@ -68,7 +89,11 @@ export default function Home() {
                 </S.TopTextsParagraph>
               </S.Box>
             </S.TextBox>
-            <S.InformationsImg />
+            <Lottie 
+	            options={whatIsdefaultOptions}
+              height={700}
+              width={600}
+            />
           </S.Informations>
           <S.BottomTextsParagraph>
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
@@ -201,7 +226,11 @@ export default function Home() {
                 Fale conosco
               </S.WppButton>
             </S.ContactInformationsContent>
-            <S.ContactImg />
+            <Lottie 
+	            options={contactUsdefaultOptions}
+              height={700}
+              width={800}
+            />
           </S.ContactInformations>
         </S.Contact>
 
