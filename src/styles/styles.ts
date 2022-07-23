@@ -1,151 +1,28 @@
 import styled from 'styled-components'
-import { BiMenu } from 'react-icons/bi'
-import { MdOutlineClose } from 'react-icons/md'
-import { AiFillCheckCircle, AiFillTwitterCircle } from 'react-icons/ai'
+import { AiFillCheckCircle } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoWhatsapp } from 'react-icons/io'
-import { BsFacebook, BsTelegram } from 'react-icons/bs'
-import { FaDiscord } from 'react-icons/fa'
-import { TiSocialInstagram } from 'react-icons/ti'
 
-export const Header = styled.header`
-  background: var(--dark);
-  width: 100%;
-  height: 6rem;
-`
-
-export const HeaderContent = styled.div`
-  width: 90%;
-  display: flex;
-  text-align: right;
-`
-
-export const LogoBox = styled.div`
-  width: 25%;
-  padding: 0 0 0.1rem;
-  position: absolute;
-  background-color: var(--texts);
-  
-`
-
-export const Logo = styled.img`
-  max-width: 320px;
-`
-
-export const NavContent = styled.div`  
-  padding: 2rem 0;
-  width: 100%;
-  text-align: right;
-  align-items: right;
-`
-
-export const NavBar = styled.nav`
-  margin-top: 1rem;
-
-  @media (max-width: 800px) {
-    display: none;
-  }
-`
-
-export const Anchor = styled.a`
-  padding: 0 2rem;
-
-  font-size: 1.3rem;
-  color: var(--background);
-  text-decoration: none;
-
-  cursor: pointer;
-
-  transition: opacity 200ms;
-
-  &:hover {
-    opacity: 0.7;
-  }
-`
-
-export const Menu = styled(BiMenu)`
-  position: absolute;
-  display: none;
-  top: 2rem;
-  right: 4rem;
-
-  font-size: 3rem;
-  color: var(--primary);
-
-  cursor: pointer;
-
-  @media (max-width: 800px) {
-    display: initial;
-  }
-`
-
-export const MenuArea = styled.div`
-  width: 100%;
-  height: 100vh;
-
-  background: var(--dark);
-`
-
-export const CloseMenu = styled(MdOutlineClose)`
-  position: absolute;
-  top: 2rem;
-  right: 4rem;
-
-  font-size: 3rem;
-  color: var(--primary);
-
-  cursor: pointer;
-`
-
-export const NavList = styled.ul`
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 4rem;
-`
-
-export const NavItemList = styled.li`
-  padding: 4rem;
-
-  font-size: 2rem;
-  color: #FAFAFA;
-  list-style: none;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    color: #FAFAFA;
-    
-    cursor: pointer;
-  }
+export const Container = styled.div`
+  width: 100%
+  height: 100%;
+  background: var(--background);
 `
 
 export const Main = styled.section``
 
-export const Banner = styled.div`
+export const Banner = styled.img`
   width: 100%;
-  height: 75vh;
-  background: var(--dark);
   border-top: 1px solid gray;
   box-shadow: 0px 4px 16px 0px rgba(26,26,26,1);
 `
 
-export const Texts = styled.div`
-  width: 55%;
-  padding: 14rem 0 0 12rem;
-`
-
-export const Title = styled.h1`
-  color: var(--texts);
-  font-size: 6rem;
-`
-
-export const Subtitle = styled.strong`
-  color: var(--primary);
-  font-size: 2.5rem;
-`
-
 export const Whatis = styled.section`
   margin: 10rem 0;
+
+  @media (max-width: 650px) {
+    margin: 5rem 0 0;
+  }
 `
 
 export const Informations = styled.div`
@@ -155,6 +32,14 @@ export const Informations = styled.div`
 
 export const TextBox = styled.div`
   width: 50%;
+
+  @media (max-width: 650px) {
+    width: 65%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `
 
 export const InformationsTitle = styled.h2`
@@ -164,16 +49,46 @@ export const InformationsTitle = styled.h2`
 
   font-size: 3rem;
   text-align: right;
-  color: #FAFAFA;
+  color: var(--texts);
 
   border-radius: 0 8px 8px 0;
+
+  @media (max-width: 650px) {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 400px) {
+    border-radius: 0 0 0 0;
+    text-align: center;
+    font-size: 1.7rem;
+  }
 `
 
 export const Box = styled.div`
-  width: 80%;
+  width: 100%;
   height: 30rem;
-  margin: 0 0 0 12rem;
-  background: var(--background);
+  margin: 10rem 0 0 10rem;
+
+  @media (max-width: 1200px) {
+    margin: 10rem 0 0 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    margin: 10rem 0 0 2rem;
+  }
+
+  @media (max-width: 650px) {
+    margin: 8rem 0 0 2rem;
+    height: 18rem;
+  }
+
+  @media (max-width: 400px) {
+    margin: 18rem auto 0;
+    width: 80%;
+    height: fit-content;
+  }
 `
 
 export const TopTextsParagraph = styled.p`
@@ -181,56 +96,269 @@ export const TopTextsParagraph = styled.p`
   font-weight: 600;
   line-height: 2.5rem;
   padding: 6rem 2rem;
-  text-align: center;
+  text-align: left;
+
+  @media (max-width: 1200px) {
+    padding: 4rem 2rem;
+    line-height: 2.2rem;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    line-height: 1.8rem;
+  }
+
+  @media (max-width: 530px) {
+    padding: 0 1rem 0 0.5rem;
+  }
+
+  @media (max-width: 400px) {
+    line-height: 1.6rem;
+    font-size: 1rem;
+  }
 `
 
 export const InformationsImg = styled.div`
   width: 40%;
-  height: 40rem;
   display: flex;
-  background-color: var(--dark);
-  margin: 0 0 0 6rem;
+  margin: 4rem 0 0 6rem;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
+export const InformationsImgMedium = styled.div`
+  width: 40%;
+  display: none;
+  margin: 8rem 0 0 6rem;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    margin: 8rem 0 0 4rem;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+`
+
+export const InformationsImgSmall = styled.div`
+  width: 10rem;
+  display: none;
+  margin: 8rem 0 0 6rem;
+
+  @media (max-width: 650px) {
+    display: flex;
+    margin: 12rem 0 0 2rem;
+  }
+
+  @media (max-width: 400px) {
+    position: absolute;
+    width: 100%;
+    margin: 6rem auto;
+  }
 `
 
 export const BottomTextsParagraph = styled.p`
   width: 80%;
-  margin: 4rem auto;
+  margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.5rem;
+
+  @media (max-width: 1200px) {
+    width: 84%;
+    line-height: 2.2rem;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  @media (max-width: 530px) {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0 0.5rem;
+    line-height: 1.6rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1rem;
+  }
 `
 
-export const About = styled.section`
-  margin: 0 0 10rem 0;
-`
-
-export const AdvantagesBox = styled.div`
-  display: flex;
-`
-
-export const AboutTextBox = styled.div`
-  position: absolute;
-  right: 0;
-  width: 50%;
-`
+export const About = styled.section``
 
 export const AboutSectionTitle = styled.h2`
-  padding: 0.5rem 2rem;
-  width: 100%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  float: right;
+  width: 60%;
   background-image: linear-gradient(to right, #e9861c, #e27b19, #db7116, #d46613, #cd5b11);
 
   font-size: 3rem;
   text-align: left;
-  color: #FAFAFA;
+  color: var(--texts);
 
   border-radius: 8px 0 0 8px;
+
+  @media (max-width: 750px) {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 0 0;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 400px) {
+    padding: 1rem;
+  }
 `
 
-export const AboutBox = styled.div`
+export const AboutTopTextContent = styled.div`
+  width: 55%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 530px) {
+    width: 92%;
+    margin: 0 auto;
+  }
+`
+
+export const AboutLineBox = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+`
+
+export const AboutImg = styled.div`
+  display: flex;
+  width: 30%;
+  margin: 12rem 0 0 10rem;
+
+  @media (max-width: 1200px) {
+    margin: 14rem 0 0 10rem;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
+export const AboutMediumImg = styled.div`
+  display: none;
+  width: 20rem;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    margin: 14rem 0 0 4rem;
+  }
+
+  @media (max-width: 800px) {
+    margin: 14rem 0 0 2rem;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+`
+
+export const AboutSmallImg = styled.div`
+  display: none;
+  width: 20rem;
+  margin: 14rem 0 0 2rem;
+
+  @media (max-width: 650px) {
+    display: flex;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+    width: 100%;
+    margin: 18rem auto 0;
+  }
+
+  @media (max-width: 400px) {
+    margin: 14rem auto 0;
+  }
+
+  @media (max-width: 350px) {
+    margin: 12rem auto 0;
+  }
+`
+
+export const AboutTopTextBox = styled.div`
   width: 80%;
-  
-  margin: 0 12rem 0 0;
-  background: var(--background);
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    margin: 2rem auto 0;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  @media (max-width: 750px) {
+    margin: 4rem auto 0;
+  }
+
+  @media (max-width: 650px) {
+    margin: 4rem auto 0;
+  }
+`
+
+export const AboutBigTextParagraph = styled.p`
+  width: 100%;
+  margin: 4rem 0;
+  padding: 0 12rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+
+  @media (max-width: 1200px) {
+    margin: 0 0 4rem;
+    padding: 0 6rem;
+  }
+
+  @media (max-width: 1000px) {
+    margin: 2rem 0 4rem;
+    padding: 0 4rem;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
 `
 
 export const Advantages = styled.section`
@@ -244,21 +372,60 @@ export const AdvantagesTitle = styled.h2`
   color: var(--texts);
   text-align: center;
   padding-top: 2rem;
+
+  @media (max-width: 650px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 3rem;
+  }
 `
+
+export const CardsBoxColumn = styled.div`
+  display: block;
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: block;
+  }
+
+  @media (max-width: 650px) {
+    display: block;
+  }
+`
+
 
 export const CardsBox = styled.div`
   display: flex;
   width: 80%;
   margin: 4rem auto;
-  flex-direction: row;
+  
   gap: 3.2rem;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    margin: 4rem 0.5rem;
+    gap: 2rem;
+  }
+
+  @media (max-width: 650px) {
+    margin: 2rem auto;
+    gap: 2rem;
+  }
 `
 
 export const CardBox = styled.div`
   padding: 2.4rem;
+  margin: 0 auto;
   text-align: left;
+  width: 28rem;
+  height: 17rem;
 
-  background: white;
+  background: var(--background);
 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
@@ -272,6 +439,36 @@ export const CardBox = styled.div`
   &:hover{
     transform: scale(1.1);
   }
+
+  @media (max-width: 1200px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    width: 22rem;
+  }
+
+  @media (max-width: 750px) {
+    width: 18rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 650px) {
+    width: 25rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 650px) {
+    width: 20rem;
+  }
+
+  @media (max-width: 330px) {
+    width: 17rem;
+  }
+
+  @media (max-width: 300px) {
+    width: 15rem;
+  }
 `
 
 export const Check = styled(AiFillCheckCircle)`
@@ -279,9 +476,7 @@ export const Check = styled(AiFillCheckCircle)`
   color: #17B169;
 `
 
-export const Collaborators = styled.section`
-  background-color: #FAFAFA;
-`
+export const Collaborators = styled.section``
 
 export const CollaboratorsTitle = styled.h2`
   font-size: 5rem;
@@ -328,9 +523,7 @@ export const RightCollaboratorPhotoBox = styled.div`
   border-radius:  15px 0 0 15px ;
 `
 
-export const Contact = styled.section`
-  background-color: #FAFAFA;
-`
+export const Contact = styled.section``
 
 export const ContactInformations = styled.div`
   width: 80%;
@@ -372,7 +565,7 @@ export const WppButton = styled.a`
   padding: 1rem 3.2rem;
   width: fit-content;
 
-  color: #FAFAFA;
+  color: var(--texts);
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -394,7 +587,6 @@ export const WppButton = styled.a`
 
 export const WppIcon = styled(IoLogoWhatsapp)`
   font-size: 2rem;
-  color: #FAFAFA;
 `
 
 export const ContactImg = styled.div`
@@ -404,124 +596,4 @@ export const ContactImg = styled.div`
   background-color: var(--dark);
   margin: 10rem 0 10rem;
   border-radius: 10px;
-`
-
-export const Footer = styled.footer`
-  height: 15rem;
-  background: #1a1a1a;
-  display: flex;
-`
-
-export const FooterBox = styled.div`
-  padding: 0.5rem 12rem 0;
-  margin: 1.5rem 0 0;
-  width: 50%;
-  height: 80%;
-  border-right: 2px solid var(--primary);
-`
-
-export const FooterName = styled.h2`
-  font-size: 2.5rem;
-  color: var(--texts);
-  border-top: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
-  width: fit-content;
-
-  span {
-    color: var(--primary);
-  }
-`
-
-export const FooterSubtitle = styled.p`
-  font-size: 1rem;
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--texts);
-`
-
-export const Links = styled.div`
-  width: 50%;
-`
-
-export const FooterTitle = styled.h2`
-  font-size: 1.3rem;
-  color: var(--primary);
-  text-align: right;
-  margin: 1rem 10rem;
-`
-
-export const TwiterLink = styled(AiFillTwitterCircle)`
-  font-size: 2rem;
-  position: absolute;
-  right: 10rem;
-  color: var(--texts);
-  cursor: pointer;
-
-  transition: filter 200ms;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-`
-
-export const FacebookLink = styled(BsFacebook)`
-  font-size: 1.8rem;
-  position: absolute;
-  right: 13rem;
-  color: var(--texts);
-  cursor: pointer;
-
-  transition: filter 200ms;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-`
-
-export const TelegramLink = styled(BsTelegram)`
-  font-size: 1.8rem;
-  position: absolute;
-  right: 16rem;
-  color: var(--texts);
-  cursor: pointer;
-
-  transition: filter 200ms;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-`
-
-export const DiscordLink = styled(FaDiscord)`
-  font-size: 1.9rem;
-  position: absolute;
-  right: 19rem;
-  background-color: var(--texts);
-  border: 2px solid #FAFAFA;
-  border-radius: 20px;
-
-  cursor: pointer;
-
-  transition: filter 200ms;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-`
-
-export const InstagramLink = styled(TiSocialInstagram)`
-  font-size: 1.8rem;
-  position: absolute;
-  right: 22rem;
-  background-color: var(--texts);
-  border: 2px solid #FAFAFA;
-  border-radius: 20px;
-
-  cursor: pointer;
-
-  transition: filter 200ms;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
 `

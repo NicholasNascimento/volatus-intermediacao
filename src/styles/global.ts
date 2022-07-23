@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --background: #FAFAFA;
     --dark: #1A1A1A;
-    --primary: #F66B0E;
+    --primary: #FF4428;
 
     --texts: #F8F8FF;
   }
