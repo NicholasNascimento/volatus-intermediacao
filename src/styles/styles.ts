@@ -15,6 +15,62 @@ export const Banner = styled.img`
   width: 100%;
   border-top: 1px solid gray;
   box-shadow: 0px 4px 16px 0px rgba(26,26,26,1);
+
+  @media (max-width: 430px) {
+    display: none;
+  }
+`
+
+export const MobileBanner = styled.img`
+  display: none;
+  width: 100%;
+  border-top: 1px solid gray;
+  box-shadow: 0px 4px 16px 0px rgba(26,26,26,1);
+
+  @media (max-width: 430px) {
+    display: initial;
+  }
+`
+
+export const MobileTitleBox = styled.div`
+  display: none;
+  margin: -1rem 0 0;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--dark);
+  text-align: center;
+
+  @media (max-width: 430px) {
+    display: flex;
+  }
+`
+
+export const MobileTitle = styled.h1`
+  display: none;
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+
+  font-size: 1.2rem;
+  color: var(--primary);
+
+  strong {
+    color: var(--texts);
+    font-size: 0.8rem;
+
+    @media (max-width: 320px) {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (max-width: 430px) {
+    display: initial;
+  }
+
+  @media (max-width: 320px) {
+    margin-top: 3.5rem;
+    font-size: 1rem;
+  }
 `
 
 export const Whatis = styled.section`
@@ -45,7 +101,7 @@ export const TextBox = styled.div`
 export const InformationsTitle = styled.h2`
   padding: 0.5rem 2rem;
   width: 100%;
-  background-image: linear-gradient(to left, #e9861c, #e27b19, #db7116, #d46613, #cd5b11);
+  background-image: linear-gradient(to right, #ff4428, #fa4c32, #f5533b, #ef5a44, #e9604c);
 
   font-size: 3rem;
   text-align: right;
@@ -196,7 +252,7 @@ export const AboutSectionTitle = styled.h2`
   padding: 0.5rem 0 0.5rem 2rem;
   float: right;
   width: 60%;
-  background-image: linear-gradient(to right, #e9861c, #e27b19, #db7116, #d46613, #cd5b11);
+  background-image: linear-gradient(to left, #ff4428, #fa4c32, #f5533b, #ef5a44, #e9604c);
 
   font-size: 3rem;
   text-align: left;

@@ -46,6 +46,10 @@ export default function Home() {
         <>
           <S.Main>
             <S.Banner src="/mainbanner.jpeg" alt="Banner Volatus" />
+            <S.MobileBanner src="/mainbannermobile.jpeg" alt="Banner Volatus" />
+            <S.MobileTitleBox>
+              <S.MobileTitle>P2P COM SEGURANÇA E FACILIDADE<br /><strong>COMPRE E VENDA SUAS CRIPTOMOEDAS SEM DORES DE CABEÇA!</strong> </S.MobileTitle>
+            </S.MobileTitleBox>
           </S.Main>
 
           <S.Whatis id='what'>
