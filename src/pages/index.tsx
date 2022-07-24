@@ -256,9 +256,9 @@ export default function Home() {
                 width={800}
               />
             </S.ContactInformations>
-          </S.Contact>
+          </S.Contact> */}
 
-          <Footer /> */}
+          <Footer />
         </>
       }
     </S.Container>

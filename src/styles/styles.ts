@@ -172,6 +172,7 @@ export const TopTextsParagraph = styled.p`
   @media (max-width: 400px) {
     line-height: 1.6rem;
     font-size: 1rem;
+    text-align: center;
   }
 `
 
@@ -243,6 +244,7 @@ export const BottomTextsParagraph = styled.p`
 
   @media (max-width: 400px) {
     font-size: 1rem;
+    text-align: center;
   }
 `
 
@@ -414,6 +416,7 @@ export const AboutBigTextParagraph = styled.p`
   @media (max-width: 400px) {
     font-size: 1rem;
     padding: 0 1.5rem;
+    text-align: center;
   }
 `
 

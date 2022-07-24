@@ -5,7 +5,8 @@ export default function Footer() {
   return (
     <S.Footer>
       <S.FooterBox>
-        <S.FooterName><span>V</span>OLATU<span>S</span></S.FooterName>
+        <S.AlternativeLogo src="/alternativelogo.svg" alt="Volatus Logo" />
+        <S.NamelessLogo src="/namelesslogo.svg" alt="Volatus Nameless Logo" />
         <S.FooterSubtitle>©2022 Volatus.</S.FooterSubtitle>
       </S.FooterBox>
 
