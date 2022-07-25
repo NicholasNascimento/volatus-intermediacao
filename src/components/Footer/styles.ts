@@ -99,6 +99,10 @@ export const FooterSubtitle = styled.p`
 export const Links = styled.div`
   width: 50%;
   
+  a {
+    color: var(--dark);
+  }
+  
   @media (max-width: 360px) {
     width: 60%;
   }
@@ -223,14 +227,13 @@ export const TelegramLink = styled(BsTelegram)`
 `
 
 export const DiscordLink = styled(FaDiscord)`
-  font-size: 1.9rem;
   position: absolute;
-  right: 19rem;
+  right: 10rem;
   background-color: var(--texts);
+
+  font-size: 1.9rem;
   border: 2px solid #FAFAFA;
   border-radius: 20px;
-
-  cursor: pointer;
 
   transition: filter 200ms;
 
@@ -239,32 +242,30 @@ export const DiscordLink = styled(FaDiscord)`
   }
 
   @media (max-width: 1000px) {
-    right: 15rem;
+    right: 6rem;
   }
 
   @media (max-width: 850px) {
-    right: 12rem;
+    right: 3rem;
   }
 
   @media (max-width: 500px) {
-    right: 9rem;
+    right: 1.5rem;
     font-size: 1.6rem;
   }
 
   @media (max-width: 320px) {
-    right: 8.5rem;
+    right: 1rem;
   }
 `
 
 export const InstagramLink = styled(TiSocialInstagram)`
-  font-size: 1.8rem;
+font-size: 1.8rem;
   position: absolute;
-  right: 22rem;
+  right: 13rem;
   background-color: var(--texts);
   border: 2px solid #FAFAFA;
   border-radius: 20px;
-
-  cursor: pointer;
 
   transition: filter 200ms;
 
@@ -273,19 +274,19 @@ export const InstagramLink = styled(TiSocialInstagram)`
   }
 
   @media (max-width: 1000px) {
-    right: 18rem;
+    right: 9rem;
   }
 
   @media (max-width: 850px) {
-    right: 15rem;
+    right: 6rem;
   }
 
   @media (max-width: 500px) {
-    right: 11.5rem;
-    font-size: 1.5rem;
+    right: 4rem;
+    font-size: 1.6rem;
   }
 
   @media (max-width: 320px) {
-    right: 11rem;
+    right: 3.5rem;
   }
 `

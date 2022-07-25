@@ -7,6 +7,7 @@ import animationOmnichannel from '../lotties/omnichannel-crm-dashboard-chat-to-c
 import Header from '../components/Header';
 import { DataContext } from '../context/DataContext';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function Home() {
   const { menu } = useContext(DataContext)
@@ -41,6 +42,7 @@ export default function Home() {
   return (
     <S.Container>
       <Header />
+      <ScrollToTop />
 
       {!menu &&
         <>
@@ -228,12 +230,12 @@ export default function Home() {
               </S.CollaboratorTextBox>
               <S.RightCollaboratorPhotoBox />
             </S.CollaboratorArea>
-          </S.Collaborators>
+          </S.Collaborators> */}
 
           <S.Contact id='contact'>
-            <S.CollaboratorsTitle>
-              CONTACT US
-            </S.CollaboratorsTitle>
+            <S.ContactBannerTitle>
+              FALE CONOSCO
+            </S.ContactBannerTitle>
             <S.ContactInformations>
               <S.ContactInformationsContent>
                 <S.ContactTitle>Entre em contato com a gente!</S.ContactTitle>
@@ -250,13 +252,31 @@ export default function Home() {
                   Fale conosco
                 </S.WppButton>
               </S.ContactInformationsContent>
-              <Lottie 
-                options={contactUsdefaultOptions}
-                height={700}
-                width={800}
-              />
+              <S.ContactImg>
+                <Lottie 
+                  options={contactUsdefaultOptions}
+                  height={550}
+                  width={700}
+                />
+              </S.ContactImg>
+
+              <S.MediumContactImg>
+                <Lottie 
+                  options={contactUsdefaultOptions}
+                  height={400}
+                  width={500}
+                />
+              </S.MediumContactImg>
+
+              <S.SmallContactImg>
+                <Lottie 
+                  options={contactUsdefaultOptions}
+                  height={250}
+                  width={350}
+                />
+              </S.SmallContactImg>
             </S.ContactInformations>
-          </S.Contact> */}
+          </S.Contact>
 
           <Footer />
         </>

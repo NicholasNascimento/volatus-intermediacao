@@ -4,8 +4,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
 export const Container = styled.div`
-  width: 100%
-  height: 100%;
+  width: 100%;
   background: var(--background);
 `
 
@@ -542,7 +541,7 @@ export const CollaboratorsTitle = styled.h2`
   text-align: center;
   margin: 8rem 0 0;
   padding: 0.8rem 0;
-  background-image: linear-gradient(to right, #f08e1f, #e8831c, #e07819, #d86d17, #d06215, #d06215, #d06215, #d06215, #d86d17, #e07819, #e8831c, #f08e1f);
+  background-image: linear-gradient(to right, #f06d59, #f36651, #f75f48, #f9583f, #fc5036, #fc5036, #fc5036, #fc5036, #f9583f, #f75f48, #f36651, #f06d59);
   color: var(--texts);
 `
 
@@ -584,25 +583,82 @@ export const RightCollaboratorPhotoBox = styled.div`
 
 export const Contact = styled.section``
 
+export const ContactBannerTitle = styled.h2`
+  font-size: 5rem;
+  text-align: center;
+  margin: 8rem 0 0;
+  padding: 0.8rem 0;
+  background-image: linear-gradient(to right, #f06d59, #f36651, #f75f48, #f9583f, #fc5036, #fc5036, #fc5036, #fc5036, #f9583f, #f75f48, #f36651, #f06d59);
+  color: var(--texts);
+
+  @media (max-width: 1000px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+  }
+`
+
 export const ContactInformations = styled.div`
-  width: 80%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 `
 
 export const ContactInformationsContent = styled.div`
-  width: 30rem;
+  width: 40%;
   padding: 15rem 0 0 8rem;
+
+  @media (max-width: 1200px) {
+    padding: 15rem 0 0 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 10rem 0 0 4rem;
+  }
+
+  @media (max-width: 850px) {
+    padding: 10rem 0 0 2rem;
+  }
+
+  @media (max-width: 650px) {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: 650px) {
+    width: 90%;
+    padding: 5rem 0 0 0;
+  }
 `
 
 export const ContactTitle = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: var(--dark);
+
+  @media (max-width: 1000px) {
+    font-size: 2.2rem;
+  }
 `
 
-export const ContactList = styled.ul``
+export const ContactList = styled.ul`
+  @media (max-width: 650px) {
+    width: fit-content;
+    margin: 0 auto;
+  }
+`
 
 export const ContactListItem = styled.li`
   display: flex;
@@ -642,6 +698,15 @@ export const WppButton = styled.a`
   &:hover {
     filter: brightness(0.8);
   }
+
+  @media (max-width: 1000px) {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 650px) {
+    margin: 2rem auto;
+  }
 `
 
 export const WppIcon = styled(IoLogoWhatsapp)`
@@ -649,10 +714,35 @@ export const WppIcon = styled(IoLogoWhatsapp)`
 `
 
 export const ContactImg = styled.div`
-  width: 640px;
-  height: 400px;
   display: flex;
-  background-color: var(--dark);
-  margin: 10rem 0 10rem;
-  border-radius: 10px;
+  width: 60%;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
+export const MediumContactImg = styled.div`
+  width: 50%;
+  display: none;
+  margin: 4rem 0 0;
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+`
+
+export const SmallContactImg = styled.div`
+  width: 100%;
+  display: none;
+
+  @media (max-width: 650px) {
+    display: flex;
+  }
+
+  
 `

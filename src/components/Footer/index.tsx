@@ -12,11 +12,12 @@ export default function Footer() {
 
       <S.Links>
         <S.FooterTitle>Contact / Social Medias</S.FooterTitle>
-        <S.TwiterLink />
-        <S.FacebookLink />
-        <S.TelegramLink />
-        <S.DiscordLink />
-        <S.InstagramLink />
+        <a target='_blank' href='https://discord.com/invite/s3sSK6sh6C'>
+          <S.DiscordLink />
+        </a>
+        <a target='_blank' href='https://www.instagram.com/volatusp2p/'>
+          <S.InstagramLink />
+        </a>
       </S.Links>
     </S.Footer>
   )
