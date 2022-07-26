@@ -590,6 +590,10 @@ export const LeftCollaboratorPhotoBox = styled.div`
     border-radius: 0;
     margin-top: 5rem;
   }
+
+  @media (max-width: 800px) {
+    height: 25rem;
+  }
 `
 
 export const CollaboratorPhoto = styled.img`
@@ -701,6 +705,7 @@ export const RightCollaboratorPhotoBox = styled.div`
 `
 
 export const MobileRightCollaboratorPhotoBox = styled.div`
+  display: none;
   width: 100%;
   height: 30rem;
   margin-top: 10rem;
@@ -714,6 +719,7 @@ export const MobileRightCollaboratorPhotoBox = styled.div`
 
   @media (max-width: 450px) {
     margin-top: 5rem;
+    height: 25rem;
   }
 `
 
