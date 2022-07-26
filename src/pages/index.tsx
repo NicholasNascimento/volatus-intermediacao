@@ -195,7 +195,9 @@ export default function Home() {
                 <S.Check />
 
                 <h3>Privacidade</h3>
-                <p>##Diversidade no pagamento é um diferencial</p>
+                <p>Nos dedicamos em garantir a total privacidade dos nossos clientes, não divulgamos nenhum dado com 
+                  terceiros!
+                </p>
               </S.CardBox>
               </S.CardsBox>
             </S.CardsBoxColumn>

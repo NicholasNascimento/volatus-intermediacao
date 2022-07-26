@@ -536,10 +536,10 @@ export const Check = styled(AiFillCheckCircle)`
 
 export const Collaborators = styled.section`
   .white-space {
-    margin-top: 8rem;
+    margin: 8rem 4rem 0;
 
     @media (max-width: 800px) {
-      margin-top: 3rem;
+      margin: 3rem 0 0;
     }
   }
 `
@@ -669,6 +669,7 @@ export const MainCollaboratorDescription = styled.strong`
   @media (max-width: 800px) {
     text-align: center;
     font-weight: 400;
+    padding: 0;
   }
 
   @media (max-width: 450px) {
