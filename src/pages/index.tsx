@@ -269,11 +269,11 @@ export default function Home() {
                 <S.ContactList>
                   <S.ContactListItem>
                     <S.EmailIcon />   
-                    contato@volatusintermedicao.com
+                    p2pvolatus@gmail.com
                   </S.ContactListItem>
                 </S.ContactList>
           
-                <S.WppButton>
+                <S.WppButton href="https://api.whatsapp.com/send?phone=5517996344121&text=Ol%C3%A1%20pessoal%20da%20Volatus%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20P2P%20e%20intermedia%C3%A7%C3%B5es%20de%20vendas" target="_blank">
                   <S.WppIcon />  
                   Fale conosco
                 </S.WppButton>

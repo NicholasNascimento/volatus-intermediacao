@@ -4,6 +4,10 @@ import * as S from './styles'
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
 
+  // useEffect(() => {
+  //   console.log(window.pageYOffset)
+  // }, [screenY.valueOf])
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

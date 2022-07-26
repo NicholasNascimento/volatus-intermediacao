@@ -628,6 +628,7 @@ export const CollaboratorTextBox = styled.div`
 export const CollaboratorName = styled.h3`
   font-size: 5rem;
   font-weight: 600;
+  border-bottom: 2px solid var(--primary);
   color: var(--primary);
 
   @media (max-width: 1550px) {
@@ -636,6 +637,11 @@ export const CollaboratorName = styled.h3`
 
   @media (max-width: 1000px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 800px) {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   @media (max-width: 450px) {
@@ -650,10 +656,10 @@ export const CollaboratorName = styled.h3`
 export const MainCollaboratorDescription = styled.strong`
   font-size: 1.5rem;
   line-height: 2.2rem;
-  font-weight: 600;
   display: flex;
   text-align: left;
   margin-top: 4rem;
+  padding: 0 0 0 2.5rem;
 
   @media (max-width: 1000px) {
     margin-top: 2rem;
@@ -661,6 +667,7 @@ export const MainCollaboratorDescription = styled.strong`
   }
 
   @media (max-width: 800px) {
+    text-align: center;
     font-weight: 400;
   }
 
@@ -680,6 +687,10 @@ export const SecondaryCollaboratorDescription = styled.strong`
   @media (max-width: 1000px) {
     margin-top: 2rem;
     font-size: 1.3rem;
+  }
+
+  @media (max-width: 800px) {
+    text-align: center;
   }
 
   @media (max-width: 450px) {
@@ -807,6 +818,8 @@ export const ContactList = styled.ul`
 export const ContactListItem = styled.li`
   display: flex;
   align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
 `
 
 export const EmailIcon = styled(HiOutlineMail)`

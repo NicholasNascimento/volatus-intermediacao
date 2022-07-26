@@ -167,7 +167,7 @@ export const TwiterLink = styled(AiFillTwitterCircle)`
 export const FacebookLink = styled(BsFacebook)`
   font-size: 1.8rem;
   position: absolute;
-  right: 13rem;
+  right: 16rem;
   color: var(--texts);
   cursor: pointer;
 
@@ -178,20 +178,20 @@ export const FacebookLink = styled(BsFacebook)`
   }
 
   @media (max-width: 1000px) {
-    right: 9rem;
+    right: 12rem;
   }
 
   @media (max-width: 850px) {
-    right: 6rem;
+    right: 9rem;
   }
 
   @media (max-width: 500px) {
-    right: 4rem;
+    right: 6.5rem;
     font-size: 1.5rem;
   }
 
   @media (max-width: 320px) {
-    right: 3.5rem;
+    right: 6rem;
   }
 `
 
@@ -260,7 +260,7 @@ export const DiscordLink = styled(FaDiscord)`
 `
 
 export const InstagramLink = styled(TiSocialInstagram)`
-font-size: 1.8rem;
+  font-size: 1.9rem;
   position: absolute;
   right: 13rem;
   background-color: var(--texts);

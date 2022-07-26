@@ -18,6 +18,9 @@ export default function Footer() {
         <a target='_blank' href='https://www.instagram.com/volatusp2p/'>
           <S.InstagramLink />
         </a>
+        <a target='_blank' href='https://www.facebook.com/p2pvolatus'>
+          <S.FacebookLink />
+        </a>
       </S.Links>
     </S.Footer>
   )
