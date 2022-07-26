@@ -201,36 +201,62 @@ export default function Home() {
             </S.CardsBoxColumn>
           </S.Advantages>
 
-          {/* <S.Collaborators id='collaborators'>
+          <S.Collaborators id='collaborators'>
             <S.CollaboratorsTitle>
-              VOLATUS TEAM
+              EQUIPE VOLATUS
             </S.CollaboratorsTitle>
             <S.CollaboratorArea>
-              <S.LeftCollaboratorPhotoBox />
+              <S.LeftCollaboratorPhotoBox>
+                <S.CollaboratorPhoto src="/nicolaspozzetti.jpeg" alt="Foto de Nicolas Pozzetti" />
+              </S.LeftCollaboratorPhotoBox>
               <S.CollaboratorTextBox>
-                <S.CollaboratorName>John Doe</S.CollaboratorName>
-                <S.CollaboratorDescription>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type 
-                  specimen book.
-                </S.CollaboratorDescription>
+                <S.CollaboratorName>Nicolas Pozzetti</S.CollaboratorName>
+                <S.MainCollaboratorDescription>
+                  Iniciei no mercado através dos jogos de P2E, o que me despertou curiosidade para descobrir como essa nova 
+                  tecnologia funcionava, como eram feitas as transações, o que levava o valor das moedas subir ou cair de preço. 
+                  Com os mercados em plena euforia, tentei ao máximo aprender os conceitos e como utilizar as ferramentas para 
+                  conseguir uma oportunidade dentro da empresa. Por mais que pareça simples realizar as transações, é muito fácil 
+                  cometer erros que podem levar a perda de dinheiro sem chances de recuperação, então há uma necessidade enorme 
+                  de atenção para que isso não ocorra.<br />
+                </S.MainCollaboratorDescription>
               </S.CollaboratorTextBox>
             </S.CollaboratorArea>
+            <S.SecondaryCollaboratorDescription>
+              Dentro dessa oportunidade, atender as pessoas é muito gratificante, pois conseguimos levar de forma mais 
+              simples como é realizar transações, troca de moedas além de que a flexibilidade do nosso trabalho, tanto 
+              quanto horário, tanto quanto nas negociações, taxas e formas de pagamento, facilita muito a entrada de mais 
+              pessoas nesse mercado, existem pessoas de todas as classes e idades vindo falar conosco.<br /><br />
+
+              Sempre fui uma pessoa que busca solucionar ou minimizar problemas e vejo que a Volatus é capaz disso.<br />
+            </S.SecondaryCollaboratorDescription>
 
             <S.CollaboratorArea>
+              <S.MobileRightCollaboratorPhotoBox>
+                <S.CollaboratorPhoto src="/viniciusaquino.jpeg" alt="Foto de Vinícius Aquino" />
+              </S.MobileRightCollaboratorPhotoBox>
               <S.CollaboratorTextBox>
-                <S.CollaboratorName>John Doe</S.CollaboratorName>
-                <S.CollaboratorDescription>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type 
-                  specimen book.
-                </S.CollaboratorDescription>
+                <S.CollaboratorName>Vinicius Aquino</S.CollaboratorName>
+                <S.MainCollaboratorDescription className='white-space'>
+                  Sempre fui um entusiasta de novas tecnologias e acompanho o mercado de criptomoedas desde meados de 2019, 
+                  comecei a fazer negociações no final de 2020, um pouco antes do “hype” dos jogos P2E. Na época existia 
+                  uma falta muito grande de um serviço que facilitasse a compra e venda das moedas existentes nos projetos.<br />
+                </S.MainCollaboratorDescription>
               </S.CollaboratorTextBox>
-              <S.RightCollaboratorPhotoBox />
+              <S.RightCollaboratorPhotoBox>
+                <S.CollaboratorPhoto src="/viniciusaquino.jpeg" alt="Foto de Vinícius Aquino" />
+              </S.RightCollaboratorPhotoBox>
             </S.CollaboratorArea>
-          </S.Collaborators> */}
+            <S.SecondaryCollaboratorDescription>
+              Vi a oportunidade de começar um novo negócio, acredito ter conseguido atender a demanda que existia na época, 
+              pois muitas pessoas recomendam nossos serviços diariamente.<br /><br />
+
+	            A parte que mais gosto de meu trabalho é ver pessoas que estão entrando agora nesse mercado e conseguem, 
+              a partir de nossa orientação, utilizar essa nova tecnologia e interagir nos diferentes protocolos.<br /><br />
+
+	            Desde o começo da empresa acumulamos dezenas de milhares de transações realizadas e milhares de clientes 
+              satisfeitos!!
+            </S.SecondaryCollaboratorDescription>
+          </S.Collaborators>
 
           <S.Contact id='contact'>
             <S.ContactBannerTitle>

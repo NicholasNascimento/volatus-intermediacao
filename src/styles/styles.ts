@@ -534,7 +534,15 @@ export const Check = styled(AiFillCheckCircle)`
   color: #17B169;
 `
 
-export const Collaborators = styled.section``
+export const Collaborators = styled.section`
+  .white-space {
+    margin-top: 8rem;
+
+    @media (max-width: 800px) {
+      margin-top: 3rem;
+    }
+  }
+`
 
 export const CollaboratorsTitle = styled.h2`
   font-size: 5rem;
@@ -543,10 +551,26 @@ export const CollaboratorsTitle = styled.h2`
   padding: 0.8rem 0;
   background-image: linear-gradient(to right, #f06d59, #f36651, #f75f48, #f9583f, #fc5036, #fc5036, #fc5036, #fc5036, #f9583f, #f75f48, #f36651, #f06d59);
   color: var(--texts);
+
+  @media (max-width: 800px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 2.2rem;
+  }
 `
 
 export const CollaboratorArea = styled.div`
   display: flex;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 `
 
 export const LeftCollaboratorPhotoBox = styled.div`
@@ -555,22 +579,109 @@ export const LeftCollaboratorPhotoBox = styled.div`
   margin-top: 10rem;
   background-image: linear-gradient(to left, #1a1a1a, #222222, #2a2a2a, #323232, #3a3a3a);
   border-radius: 0 15px 15px 0;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    height: 30rem;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 5rem;
+  }
+`
+
+export const CollaboratorPhoto = styled.img`
+  height: 90%;
+  display: flex;
+  margin: 2rem auto;
+  border-radius: 15px;
+
+  @media (max-width: 800px) {
+    padding: 1rem 0;
+    height: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
 `
 
 export const CollaboratorTextBox = styled.div`
   text-align: center;
-  margin: 20rem auto;
-  width: 40%;
+  margin: 10rem auto 0;
+  width: 50%;
+
+  @media (max-width: 1000px) {
+    margin: 5rem auto 0;
+  }
+
+  @media (max-width: 800px) {
+    margin: 3rem auto 0;
+    width: 80%;
+  }
 `
 
 export const CollaboratorName = styled.h3`
   font-size: 5rem;
   font-weight: 600;
   color: var(--primary);
+
+  @media (max-width: 1550px) {
+    font-size: 3.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 2rem;
+  }
 `
 
-export const CollaboratorDescription = styled.strong`
+export const MainCollaboratorDescription = styled.strong`
   font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  display: flex;
+  text-align: left;
+  margin-top: 4rem;
+
+  @media (max-width: 1000px) {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 800px) {
+    font-weight: 400;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+`
+
+export const SecondaryCollaboratorDescription = styled.strong`
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+
+  @media (max-width: 1000px) {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
 `
 
 export const RightCollaboratorPhotoBox = styled.div`
@@ -579,9 +690,36 @@ export const RightCollaboratorPhotoBox = styled.div`
   margin-top: 10rem;
   background-image: linear-gradient(to right, #1a1a1a, #222222, #2a2a2a, #323232, #3a3a3a);
   border-radius:  15px 0 0 15px ;
+
+  @media (max-width: 1000px) {
+    height: 30rem;
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `
 
-export const Contact = styled.section``
+export const MobileRightCollaboratorPhotoBox = styled.div`
+  width: 100%;
+  height: 30rem;
+  margin-top: 10rem;
+  background-image: linear-gradient(to right, #1a1a1a, #222222, #2a2a2a, #323232, #3a3a3a);
+  border-radius: 0;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    display: flex;
+  }
+
+  @media (max-width: 450px) {
+    margin-top: 5rem;
+  }
+`
+
+export const Contact = styled.section`
+  margin-bottom: 4rem;
+`
 
 export const ContactBannerTitle = styled.h2`
   font-size: 5rem;
@@ -607,7 +745,7 @@ export const ContactBannerTitle = styled.h2`
 export const ContactInformations = styled.div`
   width: 100%;
   display: flex;
-  margin: 0 auto;
+  margin: 2rem auto;
   justify-content: space-around;
 
   @media (max-width: 650px) {

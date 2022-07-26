@@ -12,7 +12,7 @@ export default function Header() {
           <S.CloseMenu onClick={() => setMenu(!menu)}/>
           <S.NavList>
             <S.NavItemList><a href='#what' onClick={() => setMenu(!menu)}>O que é P2P</a></S.NavItemList>
-            <S.NavItemList><a href='#about' onClick={() => setMenu(!menu)}>Nossa História</a></S.NavItemList>
+            <S.NavItemList><a href='#about' onClick={() => setMenu(!menu)}>Nosso Trabalho</a></S.NavItemList>
             <S.NavItemList><a href='#advantages' onClick={() => setMenu(!menu)}>Vantagens</a></S.NavItemList>
             <S.NavItemList><a href='#collaborators' onClick={() => setMenu(!menu)}>Equipe</a></S.NavItemList>
             <S.NavItemList><a href='#contact' onClick={() => setMenu(!menu)}>Contato</a></S.NavItemList>
@@ -30,7 +30,7 @@ export default function Header() {
           <S.NavContent>
             <S.NavBar>
               <S.Anchor href='#what'>O que é P2P</S.Anchor>
-              <S.Anchor href='#about'>Nossa História</S.Anchor>
+              <S.Anchor href='#about'>Nossao Trabalho</S.Anchor>
               <S.Anchor href='#advantages'>Vantagens</S.Anchor>
               <S.Anchor href='#collaborators'>Equipe</S.Anchor>
               <S.Anchor href='#contact'>Contato</S.Anchor>
